@@ -1,0 +1,96 @@
+.form-group {
+  position: relative;
+  margin: ($gutter * 2) auto $gutter;
+  width: 100%;
+  max-width: 35em;
+  min-height: 2em;
+
+  input,
+  button {
+    background: $white;
+  }
+
+  [type='submit'],
+  [type='reset'],
+  label {
+    color: $purple;
+  }
+
+  label {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    transition-property: font-size, top, color;
+    transition-duration: 0.35s;
+    transition-timing-function: ease-out;
+  }
+
+  &:focus-within,
+  &.active {
+    &:not(.input-toggle) {
+      label {
+        top: -1.2em;
+        color: $white;
+        font-size: 0.85em;
+      }
+    }
+  }
+
+  &.input-toggle {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    background: $white;
+    padding: 1px;
+
+    label {
+      position: static;
+      flex: 1 1 auto;
+      padding: 10px 5px 12px;
+      text-align: center;
+    }
+
+    [type="radio"],
+    [type="checkbox"] {
+      @include sr-only;
+    }
+
+    input:checked + label {
+      background-color: $purple;
+      color: $white;
+    }
+  }
+
+  &.form-action {
+    display: flex;
+    justify-content: space-between;
+
+    > * {
+      flex: 0 1 45%;
+      padding: 10px 5px 12px;
+    }
+  }
+
+  &.form-misc {
+    display: block;
+    justify-content: space-between;
+    text-align: center;
+
+    [type='legal'],
+    [type='info'],
+    [type='help'],
+    [type='delete'],
+    button {
+      width: 60%;
+      margin: 0 0 10px;
+      position: center;
+      text-align: center;
+    }
+
+    > * {
+      flex: 0 1 45%;
+      padding: 10px 5px 12px;
+    }
+  }
+}

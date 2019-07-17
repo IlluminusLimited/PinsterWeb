@@ -1,16 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Link } from '@reach/router';
-import PinDetail from './components/PinDetail';
+
+import NavBar from './components/partials/NavBar';
+
+import Home from './components/pages/Home';
+import PinDetail from './components/pages/PinDetail';
+import Styleguide from './components/pages/Styleguide';
 
 const App = () => {
   return (
     <React.Fragment>
-      <h1>Hello Pinster Web 2.0!</h1>
-      <Link to="pin/1234">Detail</Link>
-
+      <NavBar />
       <Router>
-        <PinDetail path="pin/:id" />
+        <Home path="/" />
+        <PinDetail path="/pin/:id" />
+        <Styleguide path="/styleguide" />
       </Router>
     </React.Fragment>
   );

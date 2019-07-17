@@ -1,0 +1,23 @@
+svg {
+  fill: $turquoise;
+
+  &.white  { fill: $white;  }
+  &.purple { fill: $purple; }
+  &.salmon { fill: $salmon; }
+  &.yellow { fill: $yellow; }
+  &.grey   { fill: $gray-dark; }
+}
+
+.svg-add {
+  .outer {
+    fill: none;
+    stroke: $turquoise;
+    stroke-width: 1.5px;
+  }
+
+  &.white  { .outer { stroke: $white;  } }
+  &.purple { .outer { stroke: $purple; } }
+  &.salmon { .outer { stroke: $salmon; } }
+  &.yellow { .outer { stroke: $yellow; } }
+  &.grey   { .outer { stroke: $gray-dark; } }
+}
