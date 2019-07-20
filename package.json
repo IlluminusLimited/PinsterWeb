@@ -11,10 +11,14 @@
   "main": "src/App.js",
   "scripts": {
     "start": "npm run dev",
-    "dev": "parcel src/index.html",
+    "dev": "npm run watch & parcel src/index.html",
+    "watch": "npm run watch:js & npm run watch:scss",
+    "watch:js": "nodemon -e js,jsx -x \"npm run lint:js & npm run format:js\"",
+    "watch:scss": "nodemon -e scss -x \"npm run lint:scss\"",
+    "format:js": "prettier --loglevel warn --write \"src/**/*.{js,jsx}\"",
+    "lint:js": "eslint \"src/**/*.{js,jsx}\" --quiet",
+    "lint:scss": "sass-lint -qv",
     "clear-build-cache": "rm -rf .cache/ dist/",
-    "format": "prettier --write \"src/**/*.{js,jsx}\"",
-    "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
@@ -33,9 +37,17 @@
     "eslint-plugin-import": "^2.18.0",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.14.2",
+    "eslint-plugin-react-hooks": "^1.6.1",
+    "nodemon": "^1.19.1",
     "parcel-bundler": "^1.12.3",
     "prettier": "^1.18.2",
     "sass": "^1.22.5"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "node_modules"
+    ],
+    "delay": "400"
   },
   "browserslist": [
     "last 2 Chrome versions",

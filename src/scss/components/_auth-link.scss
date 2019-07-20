@@ -20,17 +20,6 @@
   }
 }
 
-body:not(.is-touch) {
-  .auth-link {
-    &:hover {
-      border: 1px solid $white;
-      background-color: rgba($white, 0.75);
-      color: $copy-dark;
-    }
-  }
-}
-
-
 .auth-link-legal {
   margin: 10px auto;
   border: 1px solid transparent;
@@ -54,6 +43,14 @@ body:not(.is-touch) {
 }
 
 body:not(.is-touch) {
+  .auth-link {
+    &:hover {
+      border: 1px solid $white;
+      background-color: rgba($white, 0.75);
+      color: $copy-dark;
+    }
+  }
+
   .auth-link-legal {
     &:hover {
       border: 1px solid $white;

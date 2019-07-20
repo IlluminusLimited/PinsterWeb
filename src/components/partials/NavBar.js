@@ -1,10 +1,9 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import { createPortal } from "react-dom";
+import { createPortal } from 'react-dom';
 import { Link } from '@reach/router';
 import SvgPanda from '../utility/svg/SvgPanda';
 
-const NavBar = props => {
+const NavBar = () => {
   return createPortal(
     <div className="header-util">
       <Link to="/">
@@ -17,8 +16,9 @@ const NavBar = props => {
         <Link to="/pin/1234">Pin Detail</Link>
         <Link to="/styleguide">Styleguide</Link>
       </nav>
-    </div>
-  , document.getElementById('header'));
-}
+    </div>,
+    document.getElementById('header')
+  );
+};
 
 export default NavBar;

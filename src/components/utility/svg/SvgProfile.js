@@ -1,7 +1,7 @@
 import React from 'react';
 
 const SvgProfile = props => {
-  let classList = "svg-profile" + (props.classList ? " " + props.classList : "");
+  let classList = 'svg-profile' + (props.classList ? ' ' + props.classList : '');
 
   return (
     <svg className={classList} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.525 26.873">
@@ -12,6 +12,6 @@ const SvgProfile = props => {
       />
     </svg>
   );
-}
+};
 
 export default SvgProfile;

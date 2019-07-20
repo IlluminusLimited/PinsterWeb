@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router, Link } from '@reach/router';
+import { Router } from '@reach/router';
 
 import NavBar from './components/partials/NavBar';
 

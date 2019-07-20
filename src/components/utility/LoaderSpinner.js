@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 
 const LoaderSpinner = () => {
   return (
@@ -8,7 +7,7 @@ const LoaderSpinner = () => {
       <div className="pip"></div>
       <div className="pip"></div>
     </div>
-  )
-}
+  );
+};
 
 export default LoaderSpinner;
