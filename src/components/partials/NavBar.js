@@ -13,7 +13,7 @@ const NavBar = () => {
       </Link>
       <nav className="header-util-nav">
         <Link to="/">Home</Link>
-        <Link to="/pin/1234">Pin Detail</Link>
+        <Link to="/profile">Profile</Link>
         <Link to="/styleguide">Styleguide</Link>
       </nav>
     </div>,

@@ -11,7 +11,7 @@
   "main": "src/App.js",
   "scripts": {
     "start": "npm run dev",
-    "dev": "npm run watch & parcel src/index.html",
+    "dev": "npm run watch & parcel src/index.html --port 3000",
     "watch": "npm run watch:js & npm run watch:scss",
     "watch:js": "nodemon -e js,jsx -x \"npm run lint:js & npm run format:js\"",
     "watch:scss": "nodemon -e scss -x \"npm run lint:scss\"",
