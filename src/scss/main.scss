@@ -43,41 +43,29 @@
 // Components
 //     specific UI components. This is where majority of our work takes place
 //     and our UI components are often composed of Objects and Components
-@import 'components/btn-small-round';
-@import 'components/loader';
-@import 'components/global-search';
-@import 'components/large-header';
-@import 'components/header-util';
-@import 'components/header-nav';
-@import 'components/footer-nav';
-@import 'components/nav-icon';
 @import 'components/auth-link';
-@import 'components/login-splash';
+@import 'components/btn-small-round';
 @import 'components/form-group';
+@import 'components/global-search';
+@import 'components/header-nav';
+@import 'components/header-util';
 @import 'components/image-uploader';
-
-@import 'components/pin-collection';
+@import 'components/large-header';
+@import 'components/login-splash';
+@import 'components/nav-icon';
+@import 'components/pin-detail';
+@import 'components/pin-detail-thumbs';
+@import 'components/pin-grid';
 @import 'components/pin-list-item';
 @import 'components/pin-stack';
-
-@import 'components/modal-overlay';
-
-@import 'components/pin-modal';
-@import 'components/pin-modal-img';
-@import 'components/pin-modal-viewer';
-@import 'components/pin-modal-content';
-@import 'components/pin-modal-thumbs';
-
-@import 'components/form-modal';
-
-@import 'components/pin-page';
 @import 'components/tmp-toast';
 
 // Utilities
 //     utilities and helper classes with ability to override anything which
 //     goes before in the triangle, eg. hide helper class
-@import 'utilities/helpers';
-@import 'utilities/with-divider';
-@import 'utilities/bg-image';
 @import 'utilities/animations';
+@import 'utilities/bg-image';
+@import 'utilities/helpers';
+@import 'utilities/loader';
 @import 'utilities/settings-page';
+@import 'utilities/with-divider';

@@ -17,7 +17,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="pin-collection">
+    <div className="pin-grid">
       {pins.map((pin, index) => (
         <PinThumb key={index} {...pin} />
       ))}
