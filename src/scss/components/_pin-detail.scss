@@ -1,0 +1,49 @@
+.pin-detail-content {
+  h1 { font-size: 1.2em; }
+
+  p {
+    margin: 0.5em 0 0;
+    padding: 0;
+  }
+}
+
+.pin-detail-img {
+  width: auto;
+  height: 100%;
+  min-height: 300px;
+  max-height: 60vh;
+  object-fit: cover;
+  object-position: center;
+}
+
+.pin-detail-tags {
+  margin: 5px 0 $gutter;
+  border-width: 1px 0;
+  border-style: solid;
+  border-color: $copy-dark;
+  padding: 5px 0;
+}
+
+@media screen and (min-width: $screen-tablet) {
+  .pin-detail {
+    width: $container-tablet;
+  }
+}
+
+@media screen and (min-width: $screen-tablet-lg) {
+  .pin-detail {
+    width: $container-tablet-lg;
+  }
+}
+
+@media screen and (min-width: $screen-desktop) {
+  .pin-detail {
+    width: $container-desktop;
+  }
+}
+
+@media screen and (min-width: $screen-desktop-lg) {
+  .pin-detail {
+    width: $container-desktop-lg;
+  }
+}
